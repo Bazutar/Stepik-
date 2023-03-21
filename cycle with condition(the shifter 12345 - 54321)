@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+    int N = 0;
+    int K = 0;
+    scanf_s("%d", &N);
+
+    while (N != 0) {
+        K = N % 10;
+        N = N / 10;
+    printf("%d", K);
+    }
+
+
+    return 0;
+}

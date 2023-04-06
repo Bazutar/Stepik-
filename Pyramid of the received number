@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+    int N = 0;
+    int k = 0;
+
+    scanf("%d", &N);//The input is the number that ends the pyramid
+
+    while (k < N) {
+        k++; 
+        
+        for (int i = 1; i <= k; i++) {
+            printf("%d ", i);
+            //continue;
+        }
+        printf("\n", k);
+        continue;
+    }
+    return 0;
+}

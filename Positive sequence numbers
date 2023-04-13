@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+
+	int N = 0;
+	int i = 0, k = 0;
+
+
+	while (N != -9999) {//The loop should stop at the number -9999
+		scanf_s("%d", &N);
+
+		switch (N) {
+
+			case -9999: break;//so that the number -9999 is not written to k
+			default: {
+				if (N >= 0) {
+					i++;
+				}
+				else {
+					k++;
+				}}
+		}
+	}
+	if (k == 0 && i != 0) {
+		printf("YES");
+	}
+	else {
+		printf("NO");
+	}
+
+	return 0;
+}

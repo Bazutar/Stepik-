@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+	int N = 0, i = 0, k = 0, n = 0;
+
+	scanf_s("%d", &N);
+
+	while (N != n) {//"N" is the number of numbers that will arrive, respectively, cycles should not be more than this number
+		n++;
+		scanf_s("%d", &i);
+		if (k == i) {
+			continue;
+		}
+		else {
+			printf("%d ", i);
+		}
+		k = i;
+
+	}
+	return 0;
+}

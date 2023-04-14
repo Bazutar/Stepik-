@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+
+    int N = 1;
+    int i = 0;//k = 0, n = 0;
+    while (N != 0) {//0 this is a number is the beginning of the necessary information
+        scanf("%d", &N);
+        continue;
+    }
+    N = 1;
+    while (N != 0) {//this number is a signal of the end of information
+        scanf("%d", &N);
+        if (N != 0) {
+            i = i + N;
+        }
+        else {
+            break;
+        }
+    }
+    printf("%d ", i);
+    return 0;
+}
+    

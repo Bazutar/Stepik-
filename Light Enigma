@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+
+    int N = 0;
+    //int i = 0, k = 0, n = 0;
+    while (N != 2517) {//2517 this is a number is the beginning of the necessary information
+        scanf_s("%d", &N);
+        continue;
+    }
+    while (N != -9999) {//this number is a signal of the end of information
+        scanf_s("%d", &N);
+        if (N != -9999) {
+            printf("%d ", N);
+        }
+        else {
+            break;
+        }
+    }
+    return 0;
+}
+           
+    

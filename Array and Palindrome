@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+	int arr_number[100] = { 0 };
+	int i = 0;
+	int n = 0;
+	int N = 0;
+	int a = 0, b = 0;
+
+	scanf("%d", &n);
+	b = n - 1;//the array starts with 0(0, 1, 2, 3, 4 = 5)
+	
+	while (i < n) {//this cycle is executed while 'i' is less than 'n'
+
+		scanf("%d", &N);
+		arr_number[i] = N;
+		i++;
+	}
+	if (n == 1) {//In order to output "YES" when entering "1"
+		printf("YES");
+		return 0;
+	}
+	else {
+		while (arr_number[a] == arr_number[b]) {//this cycle checking palindromes in an array
+			a++;
+			b--;
+			if (a > b) {//this is necessary in order to stop the cycle in time
+				break;
+			}
+			//printf("%d %d\n", arr_number[a], arr_number[b]);//for understanding what is stored in the array
+		}
+	}
+	if (arr_number[a] == arr_number[b]) {
+		printf("YES");
+	}
+	else {
+		printf("NO");
+	}
+
+	return 0;
+}
+//RTFM

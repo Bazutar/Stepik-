@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+	int N = 0, n = 0, a = 0, i = 0, arr_num[100] = { 0 };
+	double  b = 0;
+
+	scanf_s("%d", &N);
+
+	while (i < N) {
+		scanf_s("%d", &n);
+		arr_num[i] = n;
+		i++;
+	}
+	while (a < N) {
+		b = b + arr_num[a];
+		a++;
+	}
+	printf("%.2f", b / 5);
+
+	return 0;
+}

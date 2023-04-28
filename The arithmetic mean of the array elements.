@@ -16,7 +16,7 @@ int main() {
 		b = b + arr_num[a];
 		a++;
 	}
-	printf("%.2f", b / 5);
+	printf("%.2f", b / N);
 
 	return 0;
 }

@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int arr_num[100] = { 0 };
+    int N = 0, n = 0, a = 0, b = 0, i = 0, max = 0, min;
+
+    scanf_s("%d", &N);
+
+    while (i < N) {
+        scanf_s("%d", &n);
+        arr_num[i] = n;
+        if (n > max) {
+            max = n;
+        }
+        if (n < min) {
+            min = n;
+        }
+        i++;
+    }
+    while (a < N) {
+        if (arr_num[a] == min) {
+            printf("%d ", max);
+        }
+        else {
+            if (arr_num[a] == max) {
+                printf("%d ", min);
+            }
+            else {
+                printf("%d ", arr_num[a]);
+            }
+        }
+        a++;
+    }
+    return 0;
+}
+//RTFM
